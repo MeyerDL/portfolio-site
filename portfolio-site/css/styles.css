@@ -1,0 +1,301 @@
+
+/* Reset CSS Begin */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset CSS End */
+
+/* Helper Classes Begin */
+
+.alignLeft {
+	float: left;
+}
+
+.alignRight {
+	float: right; 
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px; 
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px; 
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px; 
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px; 
+}
+
+strong,
+b {
+	font-weight: 700; 
+}
+
+em,
+i {
+	font-style: italic; 
+}
+
+a {
+    color: #2dc4ea;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #59c2ab;
+}
+
+h1 {
+    color: #2dc4ea;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #59c2ab;
+    text-transform: uppercase; 
+}
+
+h3 {
+    text-transform: uppercase; 
+}
+
+p, 
+ul li,
+ol li {
+	font-size: 16px;
+	line-height: 23px; 
+	margin-bottom: 20px; 
+}
+
+/* Helper Classes End */
+
+* {
+	box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%; 
+}
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.5;
+    color: #777;
+    padding: 3rem; 
+}
+
+#header {
+    font-size: 3em;
+}
+
+.logo {
+    display: inline;
+}
+
+.headings {
+    float: right;
+    text-align: end;
+    margin-top: 1em;
+}
+
+.img-one {
+    width: 100%; 
+}
+
+#portfolio {
+    text-decoration: none;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.kitsy {
+    padding: 0.5em;
+    text-align: center;
+    color: #eb3065;
+}
+
+.unicorn {
+    padding: 0.5em;
+    text-align: center;
+    color: #ffc648;
+}
+
+.vegan-foodie {
+    padding: 0.5em;
+    text-align: center;
+    color: #c1db7a;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 800px) {
+    .logo-image {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .headings {
+        font-size: 0.8em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em;
+    }  
+
+    .footer-copyright a  {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo-image {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .headings {
+        font-size: 0.6em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em;
+    }  
+
+    .footer-copyright a  {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo-image {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    .headings {
+        font-size: 0.6em;
+        text-align: center;
+        display: block;
+        margin: 1em;
+        align-content: center;
+    }  
+
+    a  {
+        font-size: 0.7em;
+    }
+
+    .footer-copyright {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .three-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .kitsy {
+        width: 33.33%;
+    }
+
+    .unicorn {
+        width: 33.33%;
+    }
+
+    .vegan-foodie {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .three-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .kitsy {
+        width: 100%;
+    }
+
+    .unicorn {
+        width: 100%;
+    }
+
+    .vegan-foodie {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .kitsy {
+        width: calc(100% / 3);
+     }
+    
+    .unicorn {
+        width: calc(100% / 3);
+     }
+    
+    .vegan-foodie {
+        width: calc(100% / 3);
+     }
+  }
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
